@@ -13,7 +13,6 @@ import {
 
 import Card from "./Card";
 import Modal from "./Modal";
-import { updateRequestActive } from "../wallet";
 
 const TransferCard = ({
   bobo,

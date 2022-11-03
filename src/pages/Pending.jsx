@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import { Stack, Wrap, Text, Heading } from "@chakra-ui/react";
 import { Box, Image, Badge, Button, Flex, Spacer }
   from "@chakra-ui/react";
-import { requestArray } from "../wallet";
-import TransferCard from "../components/TransferCard";
 import Sidebar from "../components/Sidebar";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { useState } from "react";
@@ -16,7 +14,7 @@ const Pending = () => {
   const getPasswordData = async () => {
     let token = sessionStorage.getItem("secretKey")
 
-    const resp = await fetch("https://safe-chain.vercel.app/password/get", {
+    const resp = await fetch("http://localhost:3000/password/get", {
       method: "POST",
       body: JSON.stringify({
         "token": token

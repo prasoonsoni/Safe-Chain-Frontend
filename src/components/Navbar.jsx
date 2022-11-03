@@ -97,7 +97,7 @@ const Navbar = () => {
     else {
       // console.log(password)
       setLoginLoading(true)
-      let result = await fetch("https://safe-chain.vercel.app/user/login", {
+      let result = await fetch("http://localhost:3000/user/login", {
         method: "POST",
         body: JSON.stringify({
           "password": password,

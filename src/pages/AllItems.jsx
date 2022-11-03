@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { Stack, Wrap, Text, Heading } from "@chakra-ui/react";
 import moment from "moment";
-
-import { requestArray } from "../wallet";
 import TransferCard from "../components/TransferCard";
 import Sidebar from "../components/Sidebar";
 import Breadcrumbs from "../components/Breadcrumbs";

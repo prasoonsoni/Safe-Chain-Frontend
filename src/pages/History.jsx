@@ -26,7 +26,7 @@ const History = () => {
   const getCreditcardData = async () => {
     let token = sessionStorage.getItem("secretKey")
 
-    const resp = await fetch("https://safe-chain.vercel.app/creditcard/get", {
+    const resp = await fetch("http://localhost:3000/creditcard/get", {
       method: "POST",
       body: JSON.stringify({
         "token": token

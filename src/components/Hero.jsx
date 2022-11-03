@@ -81,7 +81,7 @@ const Hero = () => {
     else {
       // console.log(password)
       setRegisterLoading(true)
-      let result = await fetch("https://safe-chain.vercel.app/user/create", {
+      let result = await fetch("http://localhost:3000/user/create", {
         method: "POST",
         body: JSON.stringify({
           "password": password
